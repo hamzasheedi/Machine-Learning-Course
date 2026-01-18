@@ -210,7 +210,7 @@ Use in Projects:
 
 -   Prefer vectorized operations over Python loops for speed
     
--   Use appropriate data types (float32 for large datasets) to save memory
+-   appropriate data types (float32 for large datasets) to save memory
     
 -   Avoid unnecessary copies using views or in-place operations
     

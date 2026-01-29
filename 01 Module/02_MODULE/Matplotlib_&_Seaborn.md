@@ -31,8 +31,9 @@ Visualization is a critical step in AI/ML. It helps in exploratory data analysis
 
 ## 2\. Installation
 
+``` pip
 pip install matplotlib seaborn
-
+```
   
 
 * * *

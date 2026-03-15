@@ -1,0 +1,232 @@
+* * *
+
+# Topic: Neural Network (NN)
+
+## Introduction
+
+Neural Networks are the core of deep learning, inspired by the structure and functioning of the human brain.  
+They consist of layers of interconnected neurons that transform input data into meaningful predictions.
+
+Deep learning success in image recognition, NLP, and reinforcement learning comes from effectively training neural networks.
+
+* * *
+
+## 1\. Perceptron
+
+### Concept:
+
+-   The simplest neural network, introduced by Frank Rosenblatt
+    
+-   Models a single neuron
+    
+-   Takes inputs, applies weights, adds a bias, and passes through an activation function
+    
+
+### Equation:
+
+\[  
+y = f\\Big(\\sum\_{i} w\_i x\_i + b \\Big)  
+\]
+
+-   (x\_i) → input
+    
+-   (w\_i) → weight
+    
+-   (b) → bias
+    
+-   (f) → activation function
+    
+
+### Key Idea:
+
+-   Acts as a binary classifier
+    
+-   Learns decision boundaries for linearly separable data
+    
+
+* * *
+
+## 2\. Multi-Layer Perceptrons (MLPs)
+
+### Concept:
+
+-   Extension of perceptron with hidden layers
+    
+-   Each layer learns increasingly complex representations
+    
+-   Can model non-linear functions
+    
+
+### Architecture:
+
+-   Input Layer → Hidden Layer(s) → Output Layer
+    
+-   Each layer: Neurons + Activation Functions
+    
+
+### Importance:
+
+-   Foundation for deep neural networks
+    
+-   Solves problems single-layer perceptron cannot (non-linear data)
+    
+
+* * *
+
+## 3\. Forward Propagation
+
+### Concept:
+
+-   Data flows from input → hidden → output layers
+    
+-   Each neuron computes weighted sum + activation
+    
+-   Produces model prediction
+    
+
+### Equation:
+
+\[  
+a^{(l)} = f(W^{(l)} \\cdot a^{(l-1)} + b^{(l)})  
+\]
+
+-   (a^{(l)}) → activation of layer (l)
+    
+-   (W^{(l)}, b^{(l)}) → weights and biases
+    
+-   (f) → activation function
+    
+
+### Real-World Analogy:
+
+-   Like passing information through a network of neurons, each transforming the signal
+    
+
+* * *
+
+## 4\. Back Propagation
+
+### Concept:
+
+-   Algorithm to train neural networks
+    
+-   Computes gradients of loss w.r.t weights using chain rule
+    
+-   Updates weights to minimize loss
+    
+
+### Steps:
+
+1.  Forward pass → compute predictions
+    
+2.  Compute loss
+    
+3.  Backward pass → propagate error
+    
+4.  Update weights using gradient descent
+    
+
+### Equation:
+
+\[  
+w \\gets w - \\eta \\frac{\\partial L}{\\partial w}  
+\]
+
+-   (L) → loss function
+    
+-   (\\eta) → learning rate
+    
+
+### Importance:
+
+-   Enables learning in deep networks
+    
+-   Foundation for all deep learning training
+    
+
+* * *
+
+## 5\. Activation Functions
+
+### Purpose:
+
+-   Introduce non-linearity
+    
+-   Without them, MLP behaves like a linear model
+    
+
+### Common Activation Functions:
+
+1.  Sigmoid – Output: 0 to 1, used in binary classification
+    
+2.  Tanh – Output: -1 to 1, centers data
+    
+3.  ReLU (Rectified Linear Unit) – Output: max(0, x), fast training
+    
+4.  Leaky ReLU / ELU – Solve ReLU’s “dying neuron” problem
+    
+5.  Softmax – Converts output to probability distribution, used in multi-class classification
+    
+
+* * *
+
+## 6\. Loss Functions
+
+### Purpose:
+
+-   Measure how far predictions are from true labels
+    
+-   Guides back propagation
+    
+
+### Common Loss Functions:
+
+1.  Mean Squared Error (MSE) – Regression tasks
+    
+2.  Cross-Entropy Loss – Classification tasks
+    
+3.  Binary Cross-Entropy – Binary classification
+    
+4.  Categorical Cross-Entropy – Multi-class classification
+    
+
+### Role:
+
+-   Minimizing loss → better model predictions
+    
+-   Central to training neural networks effectively
+    
+
+* * *
+
+## Learning Outcome
+
+After completing this topic, learners will be able to:
+
+-   Understand perceptrons and MLPs
+    
+-   Perform forward and backward propagation
+    
+-   Select suitable activation and loss functions
+    
+-   Build basic neural networks from scratch
+    
+-   Prepare for advanced architectures like CNNs and RNNs
+    
+
+* * *
+
+## Big Picture
+
+Neural Network Basics form the foundation of deep learning:
+
+-   Perceptron → MLP → ability to model complex data
+    
+-   Forward + Back Propagation → trains the network
+    
+-   Activation + Loss Functions → enable learning and optimization
+    
+
+Mastering these concepts is critical before moving to convolutional, recurrent, or attention-based networks.
+
+* * *

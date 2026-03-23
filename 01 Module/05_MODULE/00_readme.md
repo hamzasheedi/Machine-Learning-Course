@@ -53,16 +53,7 @@ This module covers:
 -   Activation Functions
     
 -   Loss Functions
-    
-
-### Deep Learning Libraries
-
--   TensorFlow – Industry-standard DL framework
-    
--   PyTorch – Flexible framework for research and deployment
-    
--   Scikit-learn – Integration with DL pipelines for preprocessing and evaluation
-    
+        
 
 ### Convolutional Neural Networks (CNNs)
 
@@ -92,13 +83,7 @@ This module covers:
     
 -   Recommendation Systems
     
-
-### Generative Models
-
--   Autoencoders
-    
--   Generative Adversarial Networks (GANs)
-    
+ 
 
 * * *
 
